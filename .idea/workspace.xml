@@ -9,7 +9,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c1d57be-fb65-4d50-bc2a-7b7a6e119081" name="Default Changelist" comment="" />
+    <list default="true" id="0c1d57be-fb65-4d50-bc2a-7b7a6e119081" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +22,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="5a5bb32d" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -37,35 +40,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="403">
+              <caret line="278" column="76" lean-forward="true" selection-start-line="277" selection-start-column="7" selection-end-line="278" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-webrtc-1.0.22672.aar/c62fa454bb188a0295a38db109a640e4/jars/classes.jar!/org/webrtc/SessionDescription.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-webrtc-1.0.22672.aar/c62fa454bb188a0295a38db109a640e4/jars/classes.jar!/org/webrtc/SdpObserver.class">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-webrtc-1.0.22672.aar/c62fa454bb188a0295a38db109a640e4/jars/classes.jar!/org/webrtc/MediaConstraints.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-389">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -73,42 +62,81 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="445" column="8" lean-forward="true" selection-start-line="445" selection-start-column="8" selection-end-line="445" selection-end-column="8" />
+            <state relative-caret-position="397">
+              <caret line="728" column="21" selection-start-line="728" selection-start-column="21" selection-end-line="728" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3293#3672#0" expanded="true" />
-                <element signature="e#3671#3672#0" expanded="true" />
-                <element signature="e#3714#4099#0" expanded="true" />
-                <element signature="e#4098#4099#0" expanded="true" />
-                <element signature="e#4140#4291#0" expanded="true" />
-                <element signature="e#4290#4291#0" expanded="true" />
-                <element signature="e#4340#4874#0" expanded="true" />
-                <element signature="e#4873#4874#0" expanded="true" />
+                <element signature="e#3380#3759#0" expanded="true" />
+                <element signature="e#3758#3759#0" expanded="true" />
+                <element signature="e#3801#4217#0" expanded="true" />
+                <element signature="e#4216#4217#0" expanded="true" />
+                <element signature="e#4258#4409#0" expanded="true" />
+                <element signature="e#4408#4409#0" expanded="true" />
+                <element signature="e#4458#4992#0" expanded="true" />
+                <element signature="e#4991#4992#0" expanded="true" />
                 <element signature="e#6167#6168#0" expanded="true" />
                 <element signature="e#6233#6234#0" expanded="true" />
-                <element signature="e#9884#10173#0" expanded="true" />
-                <element signature="e#10172#10173#0" expanded="true" />
-                <element signature="e#15120#15121#0" expanded="true" />
-                <element signature="e#15195#15196#0" expanded="true" />
-                <element signature="e#14373#14374#0" expanded="true" />
-                <element signature="e#14449#14450#0" expanded="true" />
-                <element signature="e#15938#15939#0" expanded="true" />
-                <element signature="e#15998#15999#0" expanded="true" />
-                <element signature="e#16268#16269#0" expanded="true" />
-                <element signature="e#16328#16329#0" expanded="true" />
-                <element signature="e#16403#16404#0" expanded="true" />
-                <element signature="e#16466#16467#0" expanded="true" />
-                <element signature="e#16538#16539#0" expanded="true" />
-                <element signature="e#16598#16599#0" expanded="true" />
-                <element signature="e#17450#17451#0" expanded="true" />
-                <element signature="e#17496#17497#0" expanded="true" />
-                <element signature="e#16149#16150#0" expanded="true" />
-                <element signature="e#16225#16226#0" expanded="true" />
-                <element signature="e#19983#19984#0" expanded="true" />
-                <element signature="e#20102#20103#0" expanded="true" />
-                <element signature="e#20219#20220#0" expanded="true" />
-                <element signature="e#20329#20330#0" expanded="true" />
+                <element signature="e#10002#10291#0" expanded="true" />
+                <element signature="e#10290#10291#0" expanded="true" />
+                <element signature="e#14660#14661#0" expanded="true" />
+                <element signature="e#14721#14722#0" expanded="true" />
+                <element signature="e#16343#16344#0" expanded="true" />
+                <element signature="e#16418#16419#0" expanded="true" />
+                <element signature="e#16490#16491#0" expanded="true" />
+                <element signature="e#16562#16563#0" expanded="true" />
+                <element signature="e#17478#17479#0" expanded="true" />
+                <element signature="e#17558#17559#0" expanded="true" />
+                <element signature="e#17966#17967#0" expanded="true" />
+                <element signature="e#18039#18040#0" expanded="true" />
+                <element signature="e#18114#18115#0" expanded="true" />
+                <element signature="e#18190#18191#0" expanded="true" />
+                <element signature="e#18262#18263#0" expanded="true" />
+                <element signature="e#18335#18336#0" expanded="true" />
+                <element signature="e#18793#18794#0" expanded="true" />
+                <element signature="e#18839#18840#0" expanded="true" />
+                <element signature="e#19757#19758#0" expanded="true" />
+                <element signature="e#19833#19834#0" expanded="true" />
+                <element signature="e#21656#21657#0" expanded="true" />
+                <element signature="e#21699#21700#0" expanded="true" />
+                <element signature="e#21772#21773#0" expanded="true" />
+                <element signature="e#21818#21819#0" expanded="true" />
+                <element signature="e#20394#20448#1" />
+                <element signature="e#22850#22851#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-webrtc-1.0.22672.aar/c62fa454bb188a0295a38db109a640e4/jars/classes.jar!/org/webrtc/DataChannel.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="84" column="12" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="12" />
+              <folding>
+                <element signature="e#948#949#0" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-webrtc-1.0.22672.aar/c62fa454bb188a0295a38db109a640e4/jars/classes.jar!/org/webrtc/PeerConnectionFactory.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="108" column="33" lean-forward="true" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-webrtc-1.0.22672.aar/c62fa454bb188a0295a38db109a640e4/jars/classes.jar!/org/webrtc/MediaStream.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1547">
+              <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+              <folding>
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,15 +195,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConstantUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -193,6 +212,9 @@
       <find>createAnswer</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -200,7 +222,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/chat_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/chat_sent.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_connection.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/SocketClient.java" />
@@ -209,6 +230,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/network/CreateAnswer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/RequestData.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java" />
       </list>
     </option>
@@ -219,6 +241,7 @@
     <option name="width" value="1393" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -230,6 +253,11 @@
             <path>
               <item name="AndroidWebrtc" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="AndroidWebrtc" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
             </path>
             <path>
               <item name="AndroidWebrtc" type="1abcf292:AndroidViewProjectNode" />
@@ -292,11 +320,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
+    <property name="DEBUGGABLE_DEVICE" value="oneplus-oneplus_a3003-5a5bb32d" />
     <property name="DEBUGGABLE_PROCESS" value="xyz.vivekc.webrtccodelab" />
     <property name="DEBUGGER_ID" value="Auto" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_28" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-04T06:31:18.011Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="5a5bb32d" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-04T08:12:22.314Z" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -397,6 +426,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="23" width="1393" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2561066" />
@@ -408,9 +438,9 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Run" order="0" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.19291338" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.03937008" />
       <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40288714" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37401575" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
@@ -424,55 +454,82 @@
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Preview" order="6" weight="0.32938564" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2561066" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.35695538" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.10892388" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.33464566" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Fabric" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Preview" order="6" weight="0.32938564" />
+    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>239</line>
+          <line>245</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>249</line>
+          <line>255</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>226</line>
+          <line>232</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>153</line>
+          <line>159</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>154</line>
+          <line>160</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>199</line>
+          <line>205</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>303</line>
+          <line>309</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>135</line>
+          <line>141</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
@@ -484,7 +541,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>271</line>
+          <line>277</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
@@ -514,84 +571,116 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>173</line>
+          <line>179</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>169</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>340</line>
+          <line>346</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>263</line>
+          <line>269</line>
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>429</line>
+          <line>435</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>547</line>
+          <line>593</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>574</line>
+          <line>620</line>
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>279</line>
+          <line>285</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>418</line>
+          <line>424</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>577</line>
+          <line>623</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>582</line>
+          <line>628</line>
           <properties />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>588</line>
+          <line>634</line>
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
-          <line>378</line>
+          <line>384</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
+          <line>175</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
+          <line>480</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
+          <line>752</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java</url>
+          <line>753</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>byteBuffer.array()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>byteBuffer</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-webrtc-1.0.22672.aar/0e96d2a2115a09bd52cb1840992c67e9/jars/classes.jar!/org/webrtc/PeerConnectionFactory.class">
@@ -677,14 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -735,13 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -807,44 +881,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-webrtc-1.0.22672.aar/c62fa454bb188a0295a38db109a640e4/jars/classes.jar!/org/webrtc/MediaStream.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="445" column="8" lean-forward="true" selection-start-line="445" selection-start-column="8" selection-end-line="445" selection-end-column="8" />
+        <state relative-caret-position="1547">
+          <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+          <folding>
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-webrtc-1.0.22672.aar/c62fa454bb188a0295a38db109a640e4/jars/classes.jar!/org/webrtc/PeerConnectionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="108" column="33" lean-forward="true" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-webrtc-1.0.22672.aar/c62fa454bb188a0295a38db109a640e4/jars/classes.jar!/org/webrtc/DataChannel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="84" column="12" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="12" />
+          <folding>
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="278" column="76" lean-forward="true" selection-start-line="277" selection-start-column="7" selection-end-line="278" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3293#3672#0" expanded="true" />
-            <element signature="e#3671#3672#0" expanded="true" />
-            <element signature="e#3714#4099#0" expanded="true" />
-            <element signature="e#4098#4099#0" expanded="true" />
-            <element signature="e#4140#4291#0" expanded="true" />
-            <element signature="e#4290#4291#0" expanded="true" />
-            <element signature="e#4340#4874#0" expanded="true" />
-            <element signature="e#4873#4874#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/vivekc/webrtccodelab/ConnectionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="728" column="21" selection-start-line="728" selection-start-column="21" selection-end-line="728" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3380#3759#0" expanded="true" />
+            <element signature="e#3758#3759#0" expanded="true" />
+            <element signature="e#3801#4217#0" expanded="true" />
+            <element signature="e#4216#4217#0" expanded="true" />
+            <element signature="e#4258#4409#0" expanded="true" />
+            <element signature="e#4408#4409#0" expanded="true" />
+            <element signature="e#4458#4992#0" expanded="true" />
+            <element signature="e#4991#4992#0" expanded="true" />
             <element signature="e#6167#6168#0" expanded="true" />
             <element signature="e#6233#6234#0" expanded="true" />
-            <element signature="e#9884#10173#0" expanded="true" />
-            <element signature="e#10172#10173#0" expanded="true" />
-            <element signature="e#15120#15121#0" expanded="true" />
-            <element signature="e#15195#15196#0" expanded="true" />
-            <element signature="e#14373#14374#0" expanded="true" />
-            <element signature="e#14449#14450#0" expanded="true" />
-            <element signature="e#15938#15939#0" expanded="true" />
-            <element signature="e#15998#15999#0" expanded="true" />
-            <element signature="e#16268#16269#0" expanded="true" />
-            <element signature="e#16328#16329#0" expanded="true" />
-            <element signature="e#16403#16404#0" expanded="true" />
-            <element signature="e#16466#16467#0" expanded="true" />
-            <element signature="e#16538#16539#0" expanded="true" />
-            <element signature="e#16598#16599#0" expanded="true" />
-            <element signature="e#17450#17451#0" expanded="true" />
-            <element signature="e#17496#17497#0" expanded="true" />
-            <element signature="e#16149#16150#0" expanded="true" />
-            <element signature="e#16225#16226#0" expanded="true" />
-            <element signature="e#19983#19984#0" expanded="true" />
-            <element signature="e#20102#20103#0" expanded="true" />
-            <element signature="e#20219#20220#0" expanded="true" />
-            <element signature="e#20329#20330#0" expanded="true" />
+            <element signature="e#10002#10291#0" expanded="true" />
+            <element signature="e#10290#10291#0" expanded="true" />
+            <element signature="e#14660#14661#0" expanded="true" />
+            <element signature="e#14721#14722#0" expanded="true" />
+            <element signature="e#16343#16344#0" expanded="true" />
+            <element signature="e#16418#16419#0" expanded="true" />
+            <element signature="e#16490#16491#0" expanded="true" />
+            <element signature="e#16562#16563#0" expanded="true" />
+            <element signature="e#17478#17479#0" expanded="true" />
+            <element signature="e#17558#17559#0" expanded="true" />
+            <element signature="e#17966#17967#0" expanded="true" />
+            <element signature="e#18039#18040#0" expanded="true" />
+            <element signature="e#18114#18115#0" expanded="true" />
+            <element signature="e#18190#18191#0" expanded="true" />
+            <element signature="e#18262#18263#0" expanded="true" />
+            <element signature="e#18335#18336#0" expanded="true" />
+            <element signature="e#18793#18794#0" expanded="true" />
+            <element signature="e#18839#18840#0" expanded="true" />
+            <element signature="e#19757#19758#0" expanded="true" />
+            <element signature="e#19833#19834#0" expanded="true" />
+            <element signature="e#21656#21657#0" expanded="true" />
+            <element signature="e#21699#21700#0" expanded="true" />
+            <element signature="e#21772#21773#0" expanded="true" />
+            <element signature="e#21818#21819#0" expanded="true" />
+            <element signature="e#20394#20448#1" />
+            <element signature="e#22850#22851#0" expanded="true" />
           </folding>
         </state>
       </provider>

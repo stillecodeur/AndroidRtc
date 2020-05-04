@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,6 +31,7 @@ import com.google.gson.JsonParser;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.webrtc.AudioTrack;
 import org.webrtc.DataChannel;
 import org.webrtc.IceCandidate;
 import org.webrtc.MediaConstraints;
@@ -41,8 +43,12 @@ import org.webrtc.SdpObserver;
 import org.webrtc.SessionDescription;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.ByteBuffer;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -437,9 +443,13 @@ public class ConnectionActivity extends AppCompatActivity implements PeerConnect
     }
 
 
+    DataChannel dataChannel;
+
     public void createPeerConnectionFactory() {
 
         PeerConnectionFactory.initialize(PeerConnectionFactory.InitializationOptions.builder(getApplicationContext()).setEnableVideoHwAcceleration(true).createInitializationOptions());
+
+
         peerConnectionFactory = PeerConnectionFactory.builder().createPeerConnectionFactory();
         List<PeerConnection.IceServer> iceServers = new ArrayList<>();
         PeerConnection.IceServer iceServer = new PeerConnection.IceServer("stun:stun.1.google.com:19302");
@@ -447,11 +457,47 @@ public class ConnectionActivity extends AppCompatActivity implements PeerConnect
         PeerConnection.RTCConfiguration rtcConfiguration = new PeerConnection.RTCConfiguration(iceServers);
         peerConnection = peerConnectionFactory.createPeerConnection(rtcConfiguration, new MediaConstraints(), this);
 
+        DataChannel.Init init=new DataChannel.Init();
+        init.ordered=false;
+        dataChannel=peerConnection.createDataChannel("pratik",init);
+
+
+        dataChannel.registerObserver(new DataChannel.Observer() {
+            @Override
+            public void onBufferedAmountChange(long l) {
+                Log.d(TAG, "dataChannel onBufferedAmountChange: ");
+            }
+
+            @Override
+            public void onStateChange() {
+                Log.d(TAG, "dataChannel onStateChange: ");
+            }
+
+            @Override
+            public void onMessage(DataChannel.Buffer buffer) {
+                onChannelMsg(buffer);
+                /*ByteBuffer byteBuffer = buffer.data;
+                byteBuffer.flip();
+                String msg = null;
+                try {
+                    msg = new String(byteBuffer.array(),"UTF-8");
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }*/
+
+
+
+            }
+        });
+
+
 
     }
 
 
     private void createOffer() {
+
+
         peerConnection.createOffer(new SdpObserver() {
             @Override
             public void onCreateSuccess(SessionDescription sessionDescription) {
@@ -599,7 +645,20 @@ public class ConnectionActivity extends AppCompatActivity implements PeerConnect
     private void onGettingIceCandidate(IceCandidate iceCandidate) {
         peerConnection.addIceCandidate(iceCandidate);
         Log.d(TAG, "onGettingIceCandidate: "+iceCandidate);
+
     }
+
+    private void sendMessage(DataChannel dataChannel,String msg) {
+        ByteBuffer byteBuffer = null;
+        try {
+            byteBuffer = ByteBuffer.wrap(msg.getBytes("UTF-8"));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        DataChannel.Buffer buffer = new DataChannel.Buffer(byteBuffer, false);
+        dataChannel.send(buffer);
+    }
+
 
 
     @Override
@@ -652,8 +711,31 @@ public class ConnectionActivity extends AppCompatActivity implements PeerConnect
     }
 
     @Override
-    public void onDataChannel(DataChannel dataChannel) {
-        Log.d(TAG, "onDataChannel: ");
+    public void onDataChannel(final DataChannel dataChannel) {
+        Log.d(TAG, "onDataChannel: "+dataChannel.label());
+        final DataChannel receiveDataChannel=dataChannel;
+        receiveDataChannel.registerObserver(new DataChannel.Observer() {
+            @Override
+            public void onBufferedAmountChange(long l) {
+                Log.d(TAG, "receiveDataChannel onBufferedAmountChange: ");
+            }
+
+            @Override
+            public void onStateChange() {
+                Log.d(TAG, "receiveDataChannel onStateChange: ");
+
+                if(dataChannel.state()== DataChannel.State.OPEN){
+                    Log.d(TAG, "receiveDataChannel StateOpen: ");
+                   // sendChannelMsg(receiveDataChannel,"Hello");
+                }
+            }
+
+            @Override
+            public void onMessage(DataChannel.Buffer buffer) {
+                Log.d(TAG, " receiveDataChannel onMessage: ");
+            }
+        });
+
     }
 
     @Override
@@ -664,6 +746,37 @@ public class ConnectionActivity extends AppCompatActivity implements PeerConnect
     @Override
     public void onAddTrack(RtpReceiver rtpReceiver, MediaStream[] mediaStreams) {
         Log.d(TAG, "onAddTrack: ");
+    }
+
+
+    private void onChannelMsg(DataChannel.Buffer buffer){
+        byte[] bytes;
+        if (buffer.data.hasArray()) {
+            bytes = buffer.data.array();
+
+            String str="";
+            try {
+                 str = new String(bytes, "UTF-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
+            Log.d(TAG, "onChannelMsg: "+str);
+
+        } else {
+            bytes = new byte[buffer.data.remaining()];
+            buffer.data.get(bytes);
+        }
+
+    }
+
+    private void sendChannelMsg(DataChannel channel,String msg){
+        byte[] rawMessage = msg.getBytes(Charset.forName("UTF-8"));
+        ByteBuffer directData = ByteBuffer.allocateDirect(rawMessage.length);
+        directData.put(rawMessage);
+        directData.flip();
+        DataChannel.Buffer data = new DataChannel.Buffer(directData, false);
+        channel.send(data);
     }
 }
 
