@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Offer"
+        android:text="Call"
         android:textAllCaps="false" />
 
     <Button
@@ -42,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:visibility="visible"
         android:text="Accept"
         android:textAllCaps="false" />
 
@@ -49,6 +50,7 @@
         android:id="@+id/btn_send_candidate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_marginTop="4dp"
         android:text="Send Candidate"
         android:textAllCaps="false" />
@@ -59,6 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Decline"
+        android:visibility="gone"
         android:textAllCaps="false" />
 
     <TextView
