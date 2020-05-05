@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: me.kevingleason:pnwebrtc:1.0.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pnwebrtc-1.0.6.aar/81843d2fc5590d6d9796351d1dfc5703/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pnwebrtc-1.0.6.aar/81843d2fc5590d6d9796351d1dfc5703/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.kevingleason/pnwebrtc/1.0.6/9bb5fa7bd194df440a598f143d394643f4b0f61f/pnwebrtc-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
